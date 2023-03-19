@@ -1,0 +1,31 @@
+Question 1 :
+create Dockerfile in python folder
+10:28
+writhe these instructions :
+from python
+WORKDIR /app
+COPY . /app
+CMD [ "python","bmi.py" ]
+10:29
+write * :stuck_out_tongue:
+10:29
+hwo to create image :
+$ docker build .
+10:31
+Question 2 :
+$ docker run -it 1ae5628c46a1  ==> where   1ae5628c46a1 is our imageID
+
+
+Aziz Mrabet
+  10:39 AM
+Question 3 :
+$ docker run -it --name python-container1 1ae5628c46a1
+10:42
+Question 4:
+$  docker container  prune$docker image prune
+10:43
+Question 5:
+$ docker build -t python-image1 .
+10:45
+Question 6 :
+$  docker run -it  --rm  --name  new-container-python python-image1
